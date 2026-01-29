@@ -1,0 +1,64 @@
+.backDrop{
+    position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeModal{
+position: absolute;
+top: 3px;
+right: 8px;    
+}
+
+.modalWindow{
+display: flex;
+flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+  gap: 8px;
+   height: 100%;
+  width: 100%;
+}
+
+.canineInfo{
+padding: 50px;
+display: flex;
+gap:5px;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #2b184f 0%, #6b2a6f 25%, #c05074 50%, #f08a7c 75%, #f6c3a2 100%);
+height: 70%;
+width: 90%;    
+border-radius: 10px;
+padding: 10px;
+}
+
+.imageWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 4px 4px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.infoImage{
+width: 500px;
+height: 300px;    
+}
+
+.name{
+ font-weight: 700;   
+}
+

@@ -1,0 +1,149 @@
+.backDrop{
+    position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalWindow{
+display: flex;
+flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+  gap: 8px;
+   height: 100%;
+  width: 100%;
+}
+
+.closeModal{
+position: absolute;
+top: 3px;
+right: 8px;    
+}
+
+.canineInfo{
+padding: 50px;
+display: flex;
+flex-direction: column;
+gap:5px;
+align-items: center;
+background: linear-gradient(135deg, #2b184f 0%, #6b2a6f 25%, #c05074 50%, #f08a7c 75%, #f6c3a2 100%);
+height: 70%;
+width: 90%;    
+border-radius: 10px;
+ overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.imageWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 4px 4px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.name{
+ font-weight: 700;   
+}
+
+.infoImage{
+width: 150px;
+height: 150px;    
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 4px 4px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.descriptionTitle{
+    font-weight: 700;   
+    font-size: 18px;
+}
+
+.descriptionInfo{
+text-align: center;    
+}
+
+.temperament{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 4px 4px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.temperamentTitle{
+    font-weight: 700;   
+    font-size: 18px;
+}
+
+.temperamentInfo{
+text-align: center;    
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 4px 4px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.historyTitle{
+    font-weight: 700;   
+    font-size: 18px;
+}
+
+.historyInfo{
+text-align: center;    
+}
+
+.origin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid rgba(15, 15, 15, 0.3);
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 4px 4px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.originTitle{
+    font-weight: 700;   
+    font-size: 18px;
+}
+
+.originInfo{
+text-align: center;    
+}
