@@ -21,7 +21,7 @@ const Images = () => {
     setImagesLoadingStatus(true);
     getCaninePics()
       .then((response) => {
-        console.log(response);
+        //console.log(response);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -31,7 +31,7 @@ const Images = () => {
         //setImagesLoadingError(false);
         setCanineImages([...response]);
         setImagesLoadingStatus(false);
-        console.log(response);
+        //console.log(response);
       })
       .catch((error) => {
         setImagesLoadingStatus(false);
@@ -55,7 +55,7 @@ const Images = () => {
         //setImagesLoadingError(false);
         setCanineImage({ ...response });
         setImageLoadingStatus(false);
-        console.log(response);
+        //console.log(response);
       })
       .catch((error) => {
         setImageLoadingStatus(false);

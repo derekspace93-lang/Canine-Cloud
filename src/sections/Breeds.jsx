@@ -19,7 +19,7 @@ const Breeds = () => {
 
   const handleChange = (evt) => {
     evt.preventDefault();
-    console.log(evt.target.value);
+    //console.log(evt.target.value);
     setFilterWord(evt.target.value);
     
     const filterTemp = canineBreeds.filter(
@@ -29,13 +29,13 @@ const Breeds = () => {
           .includes(evt.target.value.trim().toLowerCase()) &&
         evt.target.value.trim() !== "",
     );
-    console.log(filterTemp);
+    //console.log(filterTemp);
     setFilteredBreeds([...filterTemp]);
   }
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(evt.target[0].value);
+    //console.log(evt.target[0].value);
     setFilterWord(evt.target[0].value);
   };
 
@@ -50,6 +50,7 @@ const Breeds = () => {
           return response.json();
         })
         .then((response) => {
+          //console.log(response);
           //setBreedsLoadingError(false);
           setCanineBreeds([...response]);
           setBreedsLoadingStatus(false);
@@ -66,7 +67,7 @@ const Breeds = () => {
     setBreedsLoadingStatus(true);
       getCanineBreeds()
         .then((response) => {
-          console.log(response);
+          //console.log(response);
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
@@ -75,7 +76,7 @@ const Breeds = () => {
         .then((response) => {
           setCanineBreeds([...response]);
           setBreedsLoadingStatus(false);
-          console.log(response);
+          //console.log(response);
         })
         .catch((error) => {
           setBreedsLoadingStatus(false);
@@ -90,7 +91,7 @@ const Breeds = () => {
     setModalState(true);
     getCanineByBreed(name)
       .then((response) => {
-        console.log(response);
+        //console.log(response);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -100,7 +101,7 @@ const Breeds = () => {
         setCanineBreed({ ...response[0] });
         
         setBreedLoadingStatus(false);
-        console.log(response);
+        //console.log(response);
       })
       .catch((error) => {
         setBreedLoadingStatus(false);
